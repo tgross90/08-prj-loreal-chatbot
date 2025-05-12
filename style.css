@@ -8,7 +8,8 @@
 /* —— body + fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #e3a535; /* Update text color */
+  background-color: #000; /* Set background to black */
   display: flex;
   justify-content: center;
 }
@@ -30,6 +31,31 @@ body {
   margin-bottom: 10px;
 }
 
+/* logo */
+.site-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.site-logo-wrapper {
+  display: inline-block;
+  background-color: #e3a535; /* Square background color */
+  width: 180px; /* Slightly larger than the logo */
+  height: 180px; /* Make it a square */
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.site-logo-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* chat window */
 .chatbox {
   margin: 40px 0;
@@ -42,7 +68,8 @@ body {
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #1a1a1a; /* Slightly lighter black for contrast */
+  color: #e3a535; /* Ensure text matches the new color scheme */
   white-space: pre-line;
 }
 
@@ -72,6 +99,8 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   font-size: 18px;
+  background: #1a1a1a; /* Match chat window background */
+  color: #e3a535; /* Update input text color */
 }
 
 .chat-form input:focus {
@@ -81,8 +110,8 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
-  color: #fff;
+  background: #ff003b; /* Button background updated to red */
+  color: #000; /* Black text for contrast */
   border: none;
   padding: 12px;
   width: 48px;
@@ -99,7 +128,7 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #cc0030; /* Darker shade of red for hover effect */
 }
 
 .chat-form button:focus {
@@ -125,7 +154,7 @@ body {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #e3a535; /* Update footer text color */
 }
 
 .site-footer nav {
@@ -134,10 +163,10 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: #e3a535; /* Update footer link color */
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #d18e2b; /* Slightly darker shade for hover effect */
 }
